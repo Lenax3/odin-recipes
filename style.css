@@ -1,0 +1,70 @@
+body {
+    background-color: lightblue;
+    font-family: monospace;
+    margin: 20px;
+}
+
+section{
+    width: 1200px;
+    height: 500px;
+    
+    background-color: papayawhip;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+body.home {
+    background-color: grey;
+    background-image: url(pics/background_baking_new.jpg) ;
+}
+
+
+div.home-block {
+    background-color: rgb(227, 201, 201);
+    text-align: center;
+    text-decoration: underline dotted;
+    padding: 50px ;          
+    margin: 0;                 
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: rosybrown;
+    margin: 0 auto;                
+    padding: 20px;
+    box-sizing: border-box;
+    width: 800;   
+    opacity: 0.99;
+}
+body.lasagna {
+    background-color: aliceblue;
+}
+
+body.mochi{
+    background-color: papayawhip;
+}
+body.crumble{
+    background-color: olive;
+}
+
+.header {
+    display: flex;
+    gap: 20px; /* Abstand zwischen Links */
+    padding: 10px 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black; /* oder deine Wunschfarbe */
+    font-weight: bold;
+}
+
+.header a.home-link {
+    font-size: 1.5em; /* HOME größer */
+}
