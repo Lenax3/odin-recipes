@@ -81,8 +81,11 @@ body.crumble{
     backdrop-filter: blur(4px);
 }
 
-h2{
-    display:inline-block;
+h2 {
     padding-bottom:5px;
-    border-bottom:2px solid #d9b382;
+    border-bottom:2px solid #d3c5b2;
+}
+
+p {
+    padding-bottom: 10px;
 }
