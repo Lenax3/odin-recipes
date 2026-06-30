@@ -42,11 +42,13 @@ section {
     opacity: 0.99;
 }
 body.lasagna {
-    background-color: aliceblue;
+     background-image: url(pics/lasagna_bg.png);
+    background-size: cover;
 }
 
 body.mochi{
-    background-color: papayawhip;
+     background-image: url(pics/mochi_bg.png);
+    background-size: cover;
 }
 body.crumble{
     background-image: url(pics/crumble_bg.png);
