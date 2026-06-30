@@ -18,20 +18,19 @@ section{
 
 body.home {
     background-color: grey;
-    background-image: url(pics/background_baking_new.jpg) ;
+    background-image: url(pics/ghibli_background.png) ;
 }
 
 
 div.home-block {
-    background-color: rgb(227, 201, 201);
     text-align: center;
-    text-decoration: underline dotted;
     padding: 50px ;          
     margin: 0;                 
     width: calc(100% + 40px);
     position: relative;
     left: -20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 section {
@@ -50,21 +49,40 @@ body.mochi{
     background-color: papayawhip;
 }
 body.crumble{
-    background-color: olive;
+    background-image: url(pics/crumble_bg.png);
+    background-size: cover;
+    
 }
 
 .header {
     display: flex;
-    gap: 20px; /* Abstand zwischen Links */
+    gap: 20px; 
     padding: 10px 20px;
 }
 
 .header a {
     text-decoration: none;
-    color: black; /* oder deine Wunschfarbe */
+    color: black; 
     font-weight: bold;
 }
 
 .header a.home-link {
-    font-size: 1.5em; /* HOME größer */
+    font-size: 1.5em; 
+}
+
+
+.back {
+    width: 70%;
+    margin: 40px auto;
+    padding: 35px;
+    background: rgba(255, 249, 240, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(60,40,20,.2);
+    backdrop-filter: blur(4px);
+}
+
+h2{
+    display:inline-block;
+    padding-bottom:5px;
+    border-bottom:2px solid #d9b382;
 }
