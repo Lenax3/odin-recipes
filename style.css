@@ -58,7 +58,7 @@ body.crumble {
 }
 
 .navbar-mochi {
-    background-color: #2b436a;
+    background-color: #963d68;
 }
 
 .navbar a,
@@ -78,7 +78,7 @@ body.crumble {
 .navbar-lasagna a:hover,
 .navbar-crumble a:hover,
 .navbar-mochi a:hover {
-    background-color: #bfbfbf;
+    background-color: #827070;
 }
 
 div.home-block {
@@ -144,7 +144,7 @@ section {
 .card-btn {
     display: inline-block;
     text-decoration: none;
-    background-color: #d3c5b2;
+    background-color: #467a5a;
     color: white;
     padding: 8px 18px;
     border-radius: 6px;
@@ -152,7 +152,7 @@ section {
 }
 
 .card-btn:hover {
-    background-color: #baab98;
+    background-color: #3d9259;
 }
 
 .back {
