@@ -179,3 +179,8 @@ p {
     margin: 5px;
     vertical-align: top;
 }
+
+#faves {
+    font-size: 20px;
+    color: white;
+}

@@ -167,3 +167,20 @@ body::before {
     filter: grayscale(0%);
     transform: scale(1.03);
 }
+ /*===========INACTIVE CARDS===========*/
+.recipe-card.inactive .card-image {
+    filter: grayscale(100%);
+    opacity: 0.6; 
+    transition: filter 0.3s ease;
+}
+
+
+.recipe-card.inactive:hover {
+    transform: none; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-card.inactive:hover .card-image {
+    filter: grayscale(100%);
+    transform: none; 
+}
