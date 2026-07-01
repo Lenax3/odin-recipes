@@ -38,6 +38,11 @@ body.gyoza {
     background-size: cover;
 }
 
+body.boba {
+    background-image: url(pics/boba_bg.png);
+    background-size: cover;
+}
+
 .navbar,
 .navbar-lasagna,
 .navbar-crumble,
