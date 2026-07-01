@@ -7,10 +7,14 @@ html {
 }
 
 body {
-    background-color: rgb(44, 103, 80);
-    font-family: monospace;
     margin: 0;
+    font-family: monospace;
+    background-color: rgb(44, 103, 80);
 }
+
+/* =========================
+   BACKGROUNDS
+========================= */
 
 body.home {
     background-color: rgb(56, 115, 106);
@@ -48,10 +52,16 @@ body.udon {
     background-size: cover;
 }
 
-.navbar,
-.navbar-lasagna,
-.navbar-crumble,
-.navbar-mochi {
+body.avocado {
+    background-image: url(pics/backgrounds/avocado_bg.png);
+    background-size: cover;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,10 +75,7 @@ body.udon {
     z-index: 1000;
 }
 
-.navbar a,
-.navbar-lasagna a,
-.navbar-crumble a,
-.navbar-mochi a {
+.navbar a {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -78,29 +85,46 @@ body.udon {
     transition: background-color 0.3s;
 }
 
-.navbar a:hover,
-.navbar-lasagna a:hover,
-.navbar-crumble a:hover,
-.navbar-mochi a:hover {
+.navbar a:hover {
     background-color: #827070;
 }
 
-div.home-block {
+/* =========================
+   HOME HEADER
+========================= */
+
+.home-block {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
     padding: 10px;
-    margin: 20px auto;
-    width: 50%;
-    max-width: 1100px;
+    margin: 50px auto;
+    width: 32%;
     min-width: 350px;
+    max-width: 1100px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-size: 20px;
-    color: rgb(0, 0, 0);
-    background-color: white;
-    border-radius: 20px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
 }
+
+.home-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.home-titles h1,
+.home-titles p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* =========================
+   SECTION (FIX: kein height!)
+========================= */
 
 section {
     background-color: rgba(0, 0, 0, 0.4);
@@ -108,10 +132,12 @@ section {
     padding: 30px;
     width: 95%;
     max-width: 1100px;
-    height: 500px;
     border-radius: 15px;
-    opacity: 0.95;
 }
+
+/* =========================
+   FAVORITE CARDS (DEIN ORIGINAL – UNVERÄNDERT)
+========================= */
 
 .cards-container {
     display: flex;
@@ -139,6 +165,10 @@ section {
     object-fit: cover;
 }
 
+/* =========================
+   CARD CONTENT
+========================= */
+
 .card-info {
     padding: 20px;
     text-align: center;
@@ -149,6 +179,10 @@ section {
     font-size: 1.2rem;
     color: #333;
 }
+
+/* =========================
+   BUTTON
+========================= */
 
 .card-btn {
     display: inline-block;
@@ -164,30 +198,41 @@ section {
     background-color: #3d9259;
 }
 
+/* =========================
+   RECIPE BOX
+========================= */
+
 .back {
     width: 70%;
     margin: 40px auto;
     padding: 35px;
     background: rgba(255, 249, 240, 0.9);
     border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(60, 40, 20, 0.2);
+    box-shadow: 0 12px 30px rgba(255, 74, 74, 0.2);
     backdrop-filter: blur(4px);
 }
 
+.back img {
+    margin: 5px;
+    vertical-align: top;
+}
+
+/* =========================
+   TEXT
+========================= */
+
 h2 {
-    padding-bottom: 5px;
     border-bottom: 2px solid #d3c5b2;
+    padding-bottom: 5px;
 }
 
 p {
     padding-bottom: 10px;
 }
 
-.back img {
-    display: inline-block;
-    margin: 5px;
-    vertical-align: top;
-}
+/* =========================
+   MISC
+========================= */
 
 #faves {
     font-size: 20px;
