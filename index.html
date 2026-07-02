@@ -11,75 +11,148 @@
 
 <body class="home">
 
-<nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="allrecipes.html">All recipes</a>
-    <a href="https://github.com/Lenax3?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
-</nav>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="allrecipes.html">All recipes</a>
+        <a href="https://github.com/Lenax3?tab=repositories" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+    </nav>
 
-<div class="home-block">
-    <img id="kitsu_logo" src="pics/kitsu.png">
+    <div class="home-block">
+        <img id="kitsu_logo" src="pics/kitsu.png" alt="Kitsune Logo">
 
-    <div class="home-titles">
-        <h1>KITSUNE RECIPES</h1>
-        <p>Delicious recipes, crafted with ❤️</p>
-    </div>
-</div>
-
-<section class="favorites-section">
-
-    <div class="section-header">
-        <div>
-            <h2 id="faves">⭐ This Week's Favorites</h2>
-            <p>Handpicked recipes for you to try</p>
+        <div class="home-titles">
+            <h1>KITSUNE RECIPES</h1>
+            <p>Delicious recipes, crafted with ❤️</p>
         </div>
-
-        <a href="allrecipes.html" class="view-all-btn">View all recipes →</a>
     </div>
 
-    <div class="cards-container">
+    <!-- Main -->
+    <div class="home-layout">
 
-        <div class="recipe-card">
-            <div class="img-wrapper">
-                <img src="pics/food/lasagna.jpg" alt="Lasagna">
-                <span class="badge">⏱ 35 min</span>
-            </div>
+        <!-- Left -->
+        <div class="main-content">
 
-            <div class="card-info">
-                <h3>Lasagna</h3>
-                <p>Classic Italian comfort food with rich flavors.</p>
-                <a href="recipes/lasagna.html" class="card-btn">View recipe →</a>
-            </div>
+            <section class="favorites-section">
+
+                <div class="section-header">
+                    <div>
+                        <h2 id="faves">⭐ This Week's Favorites</h2>
+                        <p>Handpicked recipes for you to try</p>
+                    </div>
+
+                    <a href="allrecipes.html">
+                        <button class="card-btn">All recipes →</button>
+                    </a>
+                </div>
+
+                <div class="cards-container">
+
+                    <!-- Lasagna -->
+                    <div class="recipe-card">
+
+                        <div class="img-wrapper">
+                            <a href="recipes/lasagna.html">
+                                <img src="pics/food/lasagna.jpg" alt="Lasagna">
+                            </a>
+                            <span class="badge">⏱ 35 min</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Vegan Lasagna</h3>
+                            <p>Classic Italian comfort food with rich flavors.</p>
+                            <a href="recipes/lasagna.html" class="card-btn">
+                                View recipe →
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Crumble -->
+                    <div class="recipe-card">
+
+                        <div class="img-wrapper">
+                            <a href="recipes/crumble.html">
+                                <img src="pics/food/crumble.jpg" alt="Apple Crumble">
+                            </a>
+                            <span class="badge">⏱ 45 min</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Apple Crumble</h3>
+                            <p>Warm and cozy dessert perfect for any season.</p>
+                            <a href="recipes/crumble.html" class="card-btn">
+                                View recipe →
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Mochi -->
+                    <div class="recipe-card">
+
+                        <div class="img-wrapper">
+                            <a href="recipes/mochi.html">
+                                <img src="pics/food/mochis.jpg" alt="Mochi">
+                            </a>
+                            <span class="badge">⏱ 20 min</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Mochi</h3>
+                            <p>Soft, sweet and delightfully chewy Japanese treat.</p>
+                            <a href="recipes/mochi.html" class="card-btn">
+                                View recipe →
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
 
-        <div class="recipe-card">
-            <div class="img-wrapper">
-                <img src="pics/food/crumble.jpg" alt="Apple Crumble">
-                <span class="badge">⏱ 45 min</span>
-            </div>
+        <!-- right  -->
+        <aside class="sidebar">
 
-            <div class="card-info">
-                <h3>Apple Crumble</h3>
-                <p>Warm and cozy dessert perfect for any season.</p>
-                <a href="recipes/crumble.html" class="card-btn">View recipe →</a>
-            </div>
-        </div>
+            <section class="sidebar-box">
+                <h3>Quick Categories</h3>
 
-        <div class="recipe-card">
-            <div class="img-wrapper">
-                <img src="pics/food/mochis.jpg" alt="Mochi">
-                <span class="badge">⏱ 20 min</span>
-            </div>
+                <p>🌞 Breakfast</p>
+                <p>🥗 Lunch</p>
+                <p>🍜 Dinner</p>
+                <p>🧁 Desserts</p>
+                <p>🥬 Vegetarian</p>
+            </section>
 
-            <div class="card-info">
-                <h3>Mochi</h3>
-                <p>Soft, sweet and delightfully chewy Japanese treat.</p>
-                <a href="recipes/mochi.html" class="card-btn">View recipe →</a>
-            </div>
-        </div>
+            <section class="tip-box">
+                <h3>💡 Today's Tip</h3>
+
+                <p>
+                    Let your dough rest for at least
+                    <strong>30 minutes</strong> –
+                    it makes all the difference!
+                </p>
+            </section>
+
+            <section class="sidebar-box">
+                <h3>📧 Stay Updated</h3>
+
+                <input type="email" placeholder="Your email">
+
+                <br><br>
+
+                <button class="card-btn">
+                    Subscribe
+                </button>
+            </section>
+
+        </aside>
 
     </div>
-</section>
 
 </body>
+
 </html>
