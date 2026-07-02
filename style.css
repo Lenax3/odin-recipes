@@ -81,7 +81,7 @@ body.avocado {
     gap: 25px;
     padding: 0 15px;
     width: 100%;
-    background-color: #333;
+    background-color: #435b45;
     position: fixed;
     top: 0;
     left: 0;
@@ -99,7 +99,7 @@ body.avocado {
 }
 
 .navbar a:hover {
-    background-color: rgb(67, 91, 69);
+    background-color: #49724f;
     border-radius: 20px;
 }
 
@@ -281,12 +281,27 @@ p {
 #faves {
     font-size: 20px;
     color: black;
+    border: none;
 }
 
 #kitsu_logo {
     height: 85px;
     width: auto;
     margin-right: 15px;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: rgba(255,255,255,.9);
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-size: .8rem;
+    font-weight: bold;
+    color: #333;
 }
 
 /* =========================
@@ -305,7 +320,7 @@ p {
 }
 
 .sidebar-box {
-    background: white;
+    background: var(--white);
     padding: 20px;
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0,0,0,.15);
@@ -320,30 +335,59 @@ p {
     display: flex;
     align-items: center;
     gap: 12px;
-
     padding: 10px;
     margin-top: 10px;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ded3c3;
+    transition: 0.2s ease;
+}
 
-    border-radius: 12px;
-    background: rgba(0,0,0,0.03);
-
+.category-item-alt {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
     transition: 0.2s ease;
 }
 
 .category-item:hover {
     background: rgba(0,0,0,0.08);
     transform: translateX(4px);
+    border-radius: 50px;
+}
+
+.category-item-alt:hover {
+    background: rgba(0,0,0,0.08);
+    transform: translateX(4px);
+    border-radius: 50px;
 }
 
 .category-item img {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50px; 
+    display: block;
+    overflow: hidden; 
+}
+
+.category-item-alt img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px; 
+    display: block;
+    overflow: hidden; 
 }
 
 .category-item span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.category-item-alt span {
     font-weight: bold;
     font-size: 14px;
 }
