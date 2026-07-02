@@ -1,4 +1,3 @@
-Thats my Odin Project
+Here's my Recipe Site.
 
-get ready for some beginner coding that will blow your mind
-(i donno what im doing)
+I'm not following the design rules and keep on experimenting so it hopefully looks good somedy :3
